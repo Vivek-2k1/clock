@@ -9,7 +9,7 @@ function clock(){
 	let hr = new Date().getHours();
 	let min = new Date().getMinutes();
 	let sec = new Date().getSeconds();
-	
+
 	if (dformat == "d"){
 		date.innerHTML = "Date : " + date_.getDate()+ " / " + parseInt(date_.getMonth() + 1) + " / " + date_.getFullYear();
 	}
@@ -33,10 +33,16 @@ function clock(){
 	else{
 		if(hr > 12){
 			hr = hr - 12;
-			time.innerHTML = "0" + hr + " : " + min + " : " + sec + " : PM";
+			if(hr < 10){
+				hr = "0" + hr;
+			}
+			time.innerHTML = hr + " : " + min + " : " + sec + " : PM";
 		}
 		else{
-			time.innerHTML = "0" + hr + " : " + min + " : " + sec + " : AM";
+			if(hr < 10){
+				hr = "0" + hr;
+			}
+			time.innerHTML = hr + " : " + min + " : " + sec + " : AM";
 		}
 	}
 
