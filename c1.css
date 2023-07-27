@@ -1,0 +1,84 @@
+body{
+	text-align: center;
+	background-color: brown;
+}
+
+h1{
+	margin-top: 60px;
+	font-size: 60px;
+}
+
+.clock .body{
+	margin-top:	100px;
+	display: flex;
+	border: 2px solid black;
+	border-radius: 20px;
+	box-shadow: 2px 7px 15px rgba(255, 255, 255, 0.684);
+	width: 800px;
+	height: 250px;
+	padding-top: 12px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	background-color: rgb(10, 10, 10);
+}
+
+.clock .screen{
+	width: 70%;
+	height: 100%;
+	border: 4px solid rgb(43, 42, 42);
+	box-shadow: 1px 3px 7px rgba(255, 255, 255, 0.684);
+	border-radius: 20px;
+	background-color: rgb(58, 58, 58);
+}
+
+.clock .screen .date{
+	padding-right: 10px;
+	text-align: end;
+	color: #20C20E;
+	font-size: 20px;
+	background-color: rgb(58, 58, 58);
+}
+
+.clock .screen .date p{
+	background-color: rgb(58, 58, 58);
+}
+
+.clock .screen .time{
+	text-align: center;
+	color: #20C20E;
+	font-size: 70px;
+	background-color: rgb(58, 58, 58);
+}
+
+.clock .screen .time p{
+	background-color: rgb(58, 58, 58);
+}
+
+.clock .body .components{
+	width: 30%;
+	text-align: center;
+	border-radius: 5px;
+	margin-left: 25px;
+	padding-top: 80px;
+	background-color: black;
+}
+
+select{
+	width: 150px;
+	height: 35px;
+	background-color: transparent;
+	color: #20C20E;
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid white;
+	margin-bottom: 20px;
+}
+
+option{
+	width: 150px;
+	height: 35px;
+	background-color: black;
+	color: #20C20E;
+	text-align: center;
+}
